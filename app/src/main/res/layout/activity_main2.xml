@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.affereaflaw.myapplication.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Daftar Hadir"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Jumlah Hadir"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAllCaps="true"
+        android:id="@+id/textView" />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:background="#00D0FF"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:onClick="decrement" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="6dp"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:background="#8F00B7"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:onClick="increment" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fauzi"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox1"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wibowo"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox2"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox3"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox4"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox5"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox6"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox7"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="#FF6600"
+                android:id="@+id/checkBox8"
+                android:checked="false"
+                android:buttonTint="#2eb1e8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Notulensi"
+        android:textColorHint="@color/switch_thumb_disabled_material_light"
+        android:id="@+id/Tanggal"
+        android:inputType="text"
+        android:textColor="#4fbdec" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Laporan"
+        android:textColor="#FF6600"
+        android:textAllCaps="true"
+        android:id="@+id/textView1" />
+
+        <TextView
+        android:id="@+id/summary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:text="....."
+        android:textColor="#FF6600" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:layout_gravity="bottom"
+            android:src="@android:drawable/ic_input_get"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:background="#FE0004"
+            android:onClick="submitOrder"
+            android:id="@+id/button" />
+
+
+        <ImageButton
+            android:src="@android:drawable/ic_dialog_email"
+            android:background="#FFB700"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:onClick="sendEmail"
+            android:id="@+id/button2" />
+
+        <ImageButton
+            android:src="@android:drawable/ic_dialog_info"
+            android:background="#9DFF00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:id="@+id/button3" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
